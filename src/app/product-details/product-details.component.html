@@ -1,0 +1,33 @@
+<h3>View Product Details</h3>
+<div>
+
+<div>
+    <label> <b>Model Name:</b></label>
+     {{product.modelName}}
+</div>
+
+<div>
+    <label> <b>Operating System:</b></label>
+     {{product.operatingSystem}}
+</div>
+
+<div>
+    <label> <b>Ram:</b></label> 
+    {{product.ram}}
+</div>
+
+<div>
+    <label> <b>HardWare Size:</b></label> 
+    {{product.hardWareSize}}
+</div>
+
+<div>
+    <label> <b>Stock Available:</b></label> 
+    {{product.stockAvailable}}
+</div>
+
+<button class="btn btn-info float-right" (click)="goToUpdatePage(product.modelId)"> Update</button>
+<button class="btn btn-info float-right button-left" (click)="goBack()"> Go Back</button>
+
+
+</div>

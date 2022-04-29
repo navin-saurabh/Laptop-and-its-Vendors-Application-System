@@ -1,0 +1,43 @@
+<div class="col-md-6 offset-md-3">
+
+<h3>Create Your Product</h3>
+<form (ngSubmit)="onSubmit()">
+
+<div class="form-group">
+    <label>Model Name</label>
+    <input type="text" class="form-control" id="modelName"
+    [(ngModel)]="product.modelName" name="modelName">
+</div>
+
+<div class="form-group">
+    <label>Operating System</label>
+    <input type="text" class="form-control" id="operatingSystem"
+    [(ngModel)]="product.operatingSystem" name="operatingSystem">
+</div>
+
+<div class="form-group">
+    <label>Ram</label>
+    <input type="text" class="form-control" id="ram"
+    [(ngModel)]="product.ram" name="ram">
+</div>
+
+<div class="form-group">
+    <label>Hardware Size</label>
+    <input type="text" class="form-control" id="hardWareSize"
+    [(ngModel)]="product.hardWareSize" name="hardWareSize">
+</div>
+
+<div class="form-group">
+    <label>Stock Available</label>
+    <input type="number" class="form-control" id="stockAvailable"
+    [(ngModel)]="product.stockAvailable" name="stockAvailable">
+</div>
+
+
+
+<button class="btn btn-success my-3" type="submit" >submit</button>
+
+
+</form>
+
+</div>

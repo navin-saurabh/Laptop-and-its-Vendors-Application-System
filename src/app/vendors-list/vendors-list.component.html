@@ -1,0 +1,28 @@
+<h2>List Of Vendors</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <!-- <th>S.No</th> -->
+        <th>Vendor Name</th>
+        <th>Vendor Rating</th>
+        <th>Vendor Address</th>
+        <th>Vendor Number</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vendor of vendors" >
+            <!-- <td>{{vendor.vendorId}}</td> -->
+            <td class="text-dark">{{vendor.vendorName}}</td>
+            <td class="text-dark">{{vendor.vendorRating}}</td>
+            <td class="text-dark">{{vendor.vendorAddress}}</td>
+            <td class="text-dark">{{vendor.vendorContactNumber}}</td>
+            <td>
+                <button (click)="updateVendor(vendor.vendorId)" class="btn btn-primary btn-space">Update</button>
+                <button (click)="deleteVendor(vendor.vendorId)" class="btn btn-danger btn-space">Delete</button>
+                <button (click)="viewVendor(vendor.vendorId)" class="btn btn-success btn-space">View</button>
+            </td>
+        </tr>
+    </tbody>
+    
+    </table>
